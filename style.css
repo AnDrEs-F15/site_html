@@ -1,0 +1,22 @@
+
+
+@media(max-width:750px){
+    div.Cmobile {
+        display: flex;
+        flex-direction: column !important ; 
+    }
+    .header-mobile{
+        display: flex;
+        flex-direction: column !important ; 
+        justify-items: start;
+        align-items: safe;
+    }
+    .bar-mobile{
+        display: none;
+    }
+
+    .body-mobile {
+        font-size: 10px !important ;
+
+    }
+}

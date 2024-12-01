@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Desarrollo web portfolio</title>
+    <script src="index.js" defer ></script>
+
+  </head>
+  <body class=" body-mobile flex md:justify-center w-screen h-screen bg-gray-50 items-center flex-col ">
+    <h1 class="text-2xl font-bold mb-4 text-sky-950 ">Actividad Desarrollo Web Portafolio</h1>
+    <div class="Cmobile sm:flex-col md:flex-row md:container flex md:items-center md:h-4/5  bg-white p-6 rounded-lg shadow-2xl">
+      <main class="basis-full font-mono	flex ">
+        <div>
+            <section class="header-content flex m-2 md:gap-4 items-center header-mobile" >
+                <img
+                  class="w-32 rounded-full border-solid border-2"
+                  src="https://cdn.pixabay.com/photo/2017/03/07/06/47/pirate-2123313_1280.png"
+                  alt=""
+                />
+              <article>
+                  <h2 class="text-4xl font-bold mb-4">Jhon Doe</h2>
+                  <p class="text-sm">
+                    Hola, soy John doe, desarrollador frontend apasionado por la creación de experiencias
+                    digitales innovadoras."
+                  </p>
+              </article>
+              </section>
+      
+              <section class="info mx-4">
+                  <article class="abount-me py-1  " >
+                      <div class="flex justify-between ">
+                        <h2 class="text-2xl font-bold mb-4 text-sky-950" >Acerca de mi</h2>
+                        <button class="bg-sky-950 w-40 h-7 text-white rounded-lg  hover:bg-sky-900 mx-1" > 
+                            <i class="fa-solid fa-play"></i>
+                            Iniciar lectura
+                        </button>
+                      </div>
+                      <p class="text-sm">
+                          Hola, soy Jhon Doe, desarrollador frontend apasionado por la creación de experiencias
+                          digitales innovadoras."
+                      </p>
+                  </article>
+          
+                  <article class="interest py-1  " >
+                      <h2 class="text-2xl font-bold mb-4 flex justify-end mx-4 text-sky-950" >Intereses</h2>
+                      <p class="text-sm">
+                          Cuando no estoy programando, me encanta el ciclismo y experimentar con fotografía.
+                      </p>
+                  </article>
+          
+                  <article class="skills py-1  " >
+                      <h2 class="text-2xl font-bold mb-4 text-sky-950 " >Habilidades</h2>
+                      <ul class="list-disc flex gap-80 mx-4 ">
+                          <div>
+                              <li>React</li>
+                              <li>NodeJs</li>
+                              <li>Docker</li>
+                          </div>
+                          <div>
+                              <li>DB</li>
+                              <li>DevOps</li>
+                              <li>Git</li>
+                          </div>
+                      </ul>
+                  </article>
+              </section>
+              
+        </div>
+        <div class="bar-mobile sm:hidden md:border-l-2 border    m-2"></div>
+      </main>
+
+
+      <aside class="  basis-10/12 font-mono ml-4 flex flex-col flex m-2 gap-4 items-center ">
+        <div id="portfolio-projects" class="">
+            <section>
+                <h2 class="text-2xl font-bold mb-4 text-sky-950" >Proyectos realizados</h2>
+                <p class="text-sm my-3">
+                    Diseñé y desarrollé una tienda en línea completamente funcional, enfocándome
+                    en ofrecer una experiencia de usuario intuitiva y agradable.
+                    Implementé un carrito de compras dinámico, permitiendo a los usuarios agregar,
+                    eliminar y actualizar productos en tiempo real. Además, integré pasarelas de pago
+                    seguras, como PayPal y Stripe, para garantizar transacciones rápidas y confiables.
+                </p>
+            </section >
+            <section class="view-portfolio m-auto w-9/12 flex justify-center items-center my-8">
+                
+                <i class="fa-solid fa-arrow-left m-3 text-sky-950 "></i>
+                <div class="flex gap-8 shadow-2xl items-center pr-4" >
+                    <img
+                        class="w-44" 
+                        src="https://images.pexels.com/photos/6214152/pexels-photo-6214152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                    <div class="proyecto-description text-xs flex flex-col gap-2">
+                        <div>
+                            <h3 class="text-1xl font-bold ">E-commerce.</h3>
+                            <p>Tecnologias usadas</p>
+                            <ul class="list-disc mx-4">
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="text-sky-950  border-2  rounded-lg h-6 w-20 " >Ver Demo</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <i class="fa-solid fa-arrow-right m-2 text-sky-950 "></i>
+    
+            </section>
+    
+            <div class="flex  justify-end my-2">
+                <button
+                onclick="showContentActive( 'portfolio-information-about-work', 'portfolio-projects'   )" 
+                class="bg-sky-950 text-white rounded-lg p-1  hover:bg-sky-900" > 
+                Informacion Laboral 
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            </div>
+        </div>
+
+        <div id="portfolio-information-about-work" class="hidden" >
+            <section>
+                <h2 class="text-2xl font-bold mb-4 text-sky-950" >Proyectos realizados</h2>
+                <h3 class="text-1xl font-bold mb-4 text-sky-950" >Experiencia Laboral</h3>
+            </section>
+            <section>
+                <p class="text-sm">Desarrollador Backend Tech Solutions, S.A. | Enero 2021 - Actualidad</p>
+                <ul class="list-disc mx-6">
+                    <li>Desarrollé y mantuve aplicaciones backend con Java y Spring Boot.</li> 
+                    <li>Implementé APIs RESTful y optimicé la base de datos, mejorando el rendimiento.</li>
+                </ul>
+                <h3 class="text-1xl font-bold mb-4 text-sky-950" >Habilidades Técnicas:</h3>
+                <ul class="list-disc mx-6">
+                    <li>Lenguajes de Programación: Java (Avanzado), JavaScript (Intermedio), SQL (Avanzado)</li>
+                    <li>Frameworks: Spring Boot (Avanzado), React (Intermedio), Express.js (Intermedio)</li>
+                    <li>Bases de Datos: PostgreSQL (Avanzado), MySQL (Intermedio), MongoDB (Intermedio)</li>
+                </ul>
+            </section>
+
+            <section>
+                <div class="flex  justify-between my-3">
+                    <button
+                    onclick="showContentActive('portfolio-projects' , 'portfolio-information-about-work' )"
+                    id="button-back-project" class="bg-sky-950 text-white rounded-lg p-1 px-4  hover:bg-sky-900" >
+                         <i class="fa-solid fa-arrow-left"></i>
+                         Proyectos Realizados 
+
+                    </button>
+                    <button onclick="showContentActive('contact' , 'portfolio-information-about-work' )" class="bg-sky-950 text-white rounded-lg p-1 px-4  hover:bg-sky-900" > 
+                        Contacto 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <div id="contact" class="hidden" >
+            <section>
+                <h2 class="text-2xl font-bold mb-4 text-sky-950" >Contactos</h2>
+                <p class="text-sm my-3">
+                    ¡Hablemos! Si tienes alguna pregunta, proyecto en mente o simplemente
+                    quieres saludar, este es el lugar indicado. Completa el formulario a continuación
+                    o utiliza alguno de los medios de contacto disponibles.
+                </p>
+            </section > 
+
+            <section class="flex justify-center">
+                <form action="" class="flex flex-col gap-4 w-4/5 " >
+                    <div class="flex gap-4 ">
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                Nombre
+                              </label>
+                              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  type="text" placeholder="Nombre">    
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                Correo
+                              </label>
+                              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  type="text" placeholder="Correo">    
+                        </div>
+                    </div>
+                    <textarea 
+                    id="comentarios" 
+                    name="comentarios" 
+                    rows="4" 
+                    cols="20"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder=" Asunto..."
+                  ></textarea>
+                </form>
+            </section>
+            <div class="flex  justify-start  my-4">
+                <button
+                onclick="showContentActive('portfolio-projects','contact'   )" 
+                class="bg-sky-950 text-white rounded-lg p-1  px-4 hover:bg-sky-900" > 
+                <i class="fa-solid fa-arrow-left"></i>
+                Inicio </button>
+            </div>
+
+        </div>
+
+      </aside>
+    </div>
+  </body>
+
+
+</html>
